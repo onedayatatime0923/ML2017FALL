@@ -1,0 +1,10 @@
+python3 set_train_data.py $1
+python3 hw3_b049011136.py  weight3.hdf5
+python3 hw3_b049011136.py  weight5.hdf5  
+python3 hw3_b049011136.py  weights-7Cnn-nodropout.hdf5  
+python3 hw3_b049011136.py  weights-7Cnn-0.1.hdf5        
+python3 hw3_b049011136.py  weights-7Cnn-0.3.hdf5   
+python3 hw3_b049011136.py  weights-7Cnn-0.5.hdf5
+python3 hw3_b049011136.py  weights-drop_out-0.1.hdf5
+python3 hw3_b049011136.py  weights-drop_out-0.3.hdf5
+python3 hw3_b049011136.py  weights-drop_out-0.5.hdf5
