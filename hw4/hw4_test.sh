@@ -1,4 +1,5 @@
 
+mkdir data_preprocess; mkdir models    
 cd data_preprocess
 wget 'https://www.dropbox.com/s/t6zdaiw6etc12tb/word2vec_model.bin?dl=1' -O word2vec_model.bin
 cd ../models
