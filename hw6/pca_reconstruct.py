@@ -5,6 +5,7 @@ from util_pca import DataManager
 import argparse
 from skimage import io
 import numpy as np
+assert np
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 '''''''''''''''''''''       setting option                           '''
@@ -26,5 +27,5 @@ S=dm.construct_pca('image')
 image=io.imread(args.image).flatten().reshape((-1,1))
 pca_out=dm.pca(S,image,4)
 
-data=dm.reconstruct(S,pca_out).reshape((600,600,3)).astype(np.uint8)
-io.imsave('reconstruction.jpg',data)
+data=dm.reconstruct(S,pca_out)
+dm.plot(data,'reconstruction.jpg')

@@ -1,7 +1,6 @@
 
 from skimage import io
 import numpy as np
-#import matplotlib.pyplot as plt
 assert io and np
 
 class   DataManager:
@@ -31,15 +30,12 @@ class   DataManager:
             res+=data[i]*weight[:,i]
         res+=self.x_mean.reshape((-1,))
         return res
-    '''
     def plot(self,data,output_file):
         x=np.copy(data)
         x-=np.min(x)
         x/=np.max(x)
         x=(x*255).astype(np.uint8).reshape(600,600,3)
-        plt.imsave(output_file,x)
-        pass
-        '''
+        io.imsave(output_file,x)
         
 
         
