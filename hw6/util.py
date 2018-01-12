@@ -99,6 +99,6 @@ class   DataManager:
             plt.scatter(self.data[name][i][0],self.data[name][i][1],c='r')
         for i in range(5000,10000):
             plt.scatter(self.data[name][i][0],self.data[name][i][1],c='b')
-        plt.show()
+        plt.savefig('image.png')
 
         
