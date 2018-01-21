@@ -1,0 +1,3 @@
+
+cd src
+bash test.sh testing_data_path output_file_path
