@@ -1,3 +1,13 @@
 
-cd src
+[testing command]
 bash test.sh testing_data_path output_file_path
+
+[imported module]
+keras
+numpy
+jieba
+argparse
+gensim
+scipy
+pandas
+random
