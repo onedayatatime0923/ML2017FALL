@@ -55,6 +55,6 @@ print(output.shape)
 
 ans=dm.ensemble(output,mode='average')
 print(ans.shape)
-dm.write(ans,args.output)
+dm.write(ans,'../'+args.output)
 '''
 '''
